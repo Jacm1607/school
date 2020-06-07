@@ -1,4 +1,4 @@
-@extends('template.tp1')
+@extends('template.app')
 
 @section('content')
 <div class="error-pagewrap">
