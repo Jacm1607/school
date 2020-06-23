@@ -1,0 +1,107 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:06
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-books-in-a-library:before { content: "\f100"; }
+.flaticon-books-stack:before { content: "\f101"; }
+.flaticon-diploma-roll:before { content: "\f102"; }
+.flaticon-e-book:before { content: "\f103"; }
+.flaticon-e-book-with-rss-sign:before { content: "\f104"; }
+.flaticon-education-certificate:before { content: "\f105"; }
+.flaticon-education-hardware:before { content: "\f106"; }
+.flaticon-email-symbol-on-laptop-screen:before { content: "\f107"; }
+.flaticon-graduate-cap:before { content: "\f108"; }
+.flaticon-internet-education-graduation:before { content: "\f109"; }
+.flaticon-library-with-books:before { content: "\f10a"; }
+.flaticon-man-and-laptop:before { content: "\f10b"; }
+.flaticon-man-on-phone-screen:before { content: "\f10c"; }
+.flaticon-medal-of-number-one:before { content: "\f10d"; }
+.flaticon-movie-with-students-audience:before { content: "\f10e"; }
+.flaticon-online-books-study-materials-for-education:before { content: "\f10f"; }
+.flaticon-online-education-by-email:before { content: "\f110"; }
+.flaticon-online-education-graduation-symbol-with-diploma-and-mouse:before { content: "\f111"; }
+.flaticon-online-graduation:before { content: "\f112"; }
+.flaticon-online-information:before { content: "\f113"; }
+.flaticon-online-student:before { content: "\f114"; }
+.flaticon-online-student-symbol:before { content: "\f115"; }
+.flaticon-online-studies-by-tablet:before { content: "\f116"; }
+.flaticon-owl-sage-symbol:before { content: "\f117"; }
+.flaticon-porter-with-hat:before { content: "\f118"; }
+.flaticon-reading-tools-in-library:before { content: "\f119"; }
+.flaticon-school-building:before { content: "\f11a"; }
+.flaticon-semicircles-signal-symbol:before { content: "\f11b"; }
+.flaticon-student-certification-symbol:before { content: "\f11c"; }
+.flaticon-student-of-stick-man-sitting-on-a-chair-on-class-desk:before { content: "\f11d"; }
+.flaticon-student-star-ribbon-shape:before { content: "\f11e"; }
+.flaticon-student-with-graduation-cap:before { content: "\f11f"; }
+.flaticon-student-writing-on-a-whiteboard:before { content: "\f120"; }
+.flaticon-students-cap:before { content: "\f121"; }
+    
+    $font-Flaticon-books-in-a-library: "\f100";
+    $font-Flaticon-books-stack: "\f101";
+    $font-Flaticon-diploma-roll: "\f102";
+    $font-Flaticon-e-book: "\f103";
+    $font-Flaticon-e-book-with-rss-sign: "\f104";
+    $font-Flaticon-education-certificate: "\f105";
+    $font-Flaticon-education-hardware: "\f106";
+    $font-Flaticon-email-symbol-on-laptop-screen: "\f107";
+    $font-Flaticon-graduate-cap: "\f108";
+    $font-Flaticon-internet-education-graduation: "\f109";
+    $font-Flaticon-library-with-books: "\f10a";
+    $font-Flaticon-man-and-laptop: "\f10b";
+    $font-Flaticon-man-on-phone-screen: "\f10c";
+    $font-Flaticon-medal-of-number-one: "\f10d";
+    $font-Flaticon-movie-with-students-audience: "\f10e";
+    $font-Flaticon-online-books-study-materials-for-education: "\f10f";
+    $font-Flaticon-online-education-by-email: "\f110";
+    $font-Flaticon-online-education-graduation-symbol-with-diploma-and-mouse: "\f111";
+    $font-Flaticon-online-graduation: "\f112";
+    $font-Flaticon-online-information: "\f113";
+    $font-Flaticon-online-student: "\f114";
+    $font-Flaticon-online-student-symbol: "\f115";
+    $font-Flaticon-online-studies-by-tablet: "\f116";
+    $font-Flaticon-owl-sage-symbol: "\f117";
+    $font-Flaticon-porter-with-hat: "\f118";
+    $font-Flaticon-reading-tools-in-library: "\f119";
+    $font-Flaticon-school-building: "\f11a";
+    $font-Flaticon-semicircles-signal-symbol: "\f11b";
+    $font-Flaticon-student-certification-symbol: "\f11c";
+    $font-Flaticon-student-of-stick-man-sitting-on-a-chair-on-class-desk: "\f11d";
+    $font-Flaticon-student-star-ribbon-shape: "\f11e";
+    $font-Flaticon-student-with-graduation-cap: "\f11f";
+    $font-Flaticon-student-writing-on-a-whiteboard: "\f120";
+    $font-Flaticon-students-cap: "\f121";

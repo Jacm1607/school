@@ -14,7 +14,7 @@
 		============================================ -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"> -->
     <!-- Bootstrap CSS
-		============================================ -->
+    ============================================ -->    
     <link rel="stylesheet" href="{{asset('template/css/bootstrap.min.css')}}">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <!-- Bootstrap CSS
@@ -58,15 +58,16 @@
 		============================================ -->
     <link rel="stylesheet" href="{{asset('template/style.css')}}">
     <!-- responsive CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('template/css/responsive.css')}}">
-    <!-- modernizr JS
-		============================================ -->
-    <script src="{{asset('template/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+      ============================================ -->
+      <link rel="stylesheet" href="{{asset('template/css/responsive.css')}}">
+      <!-- modernizr JS
+        ============================================ -->
+        <script src="{{asset('template/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+    @yield('css')
+
 </head>
 
 <body>
-    @yield('left')
     @yield('content')
     <!-- jquery
 		============================================ -->
@@ -126,9 +127,9 @@
     <!-- main JS
 		============================================ -->
     <script src="{{asset('template/js/main.js')}}"></script>
-    <!-- tawk chat JS
-		============================================ -->
-    <!-- <script src="{{asset('template/js/tawk-chat.js')}}"></script> -->
+
+    <script src="{{asset('template/js/select2/select2.full.min.js')}}"></script>
+    @yield('script')
 </body>
 
 </html>

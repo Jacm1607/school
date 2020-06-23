@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Session;
 
 class User extends Authenticatable
 {
@@ -16,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'idPersona', 'email', 'password',
     ];
 
     /**
@@ -36,4 +37,31 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function roles ()
+    {
+        return $this->belongsToMany('App\Rol', 'usuario_rol', 'idUsuario', 'idRol')->select('id','nombre');
+    }
+
+    public function setSession( $roles ) {
+        if (count($roles) == 1) {
+            Session::put([
+                'roles' => $roles[0]['id'],
+                'rol_nombre' => $roles[0]['nombre'],
+            ]);
+        } else {
+            // dd($roles);
+            $array_rol = array();
+            foreach ($roles as $value) {
+                array_push($array_rol,$value['id']);
+            }
+            Session::put('roles', $array_rol);
+        }
+    }
+
+    public function scopeEmail ($query , $email) {
+        if ($email) {
+            return $query->where('email','LIKE',"%$email%");
+        }
+    }
 }
